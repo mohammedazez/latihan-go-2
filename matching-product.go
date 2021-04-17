@@ -2,6 +2,7 @@ package main
 
 import "fmt"
 
+//belum selesai
 func main() {
 	// 10, 10, 20, 20, 10, 30, 50, 10, 20
 	// cari integer yang sama = 10, 10, 20, 20, 10, 10, 20
