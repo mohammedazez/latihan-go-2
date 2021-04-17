@@ -16,10 +16,6 @@ func main() {
 		newName += string(name[i])
 	}
 	fmt.Println(newName)
-
 	toArray := strings.Fields(newName)
 	fmt.Println(toArray)
-
-	//joined := strings.Join(values, ",")
-	//fmt.Println(joined)
 }
