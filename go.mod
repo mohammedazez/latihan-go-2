@@ -1,1 +1,0 @@
-module "latihan-go-2"
