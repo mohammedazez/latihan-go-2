@@ -2,19 +2,20 @@ package main
 
 import "fmt"
 
-func main(){
-	var (
-		number = [...]int{1, 2, 3, 4, 5}
-		newNumber int
-	)
+func SliceNumber(number []int) {
+	var newNumber int
 
-	//
 	for i := 0; i <= len(number); i++ {
-		fmt.Println(number)
 		newNumber += i
-		fmt.Println(newNumber)
 	}
+	fmt.Println(newNumber)
 }
 
-
-
+func main() {
+	caseSatu := []int{1, 2, 3, 4, 5}
+	caseDua := []int{1, 2, 3}
+	caseTiga := []int{}
+	SliceNumber(caseSatu)
+	SliceNumber(caseDua)
+	SliceNumber(caseTiga)
+}

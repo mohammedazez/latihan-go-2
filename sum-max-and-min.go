@@ -4,9 +4,7 @@ import (
 	"fmt"
 )
 
-func main() {
-	var number = [...]int{10, 120, 14, 50, 5}
-
+func MaxMin(number []int) {
 	smallesNumber := number[0]
 	biggestNumber := number[0]
 
@@ -27,7 +25,16 @@ func main() {
 	negativeSum := biggestNumber - smallesNumber
 	result := postiveSum + negativeSum
 
-	fmt.Println(postiveSum)
-	fmt.Println(negativeSum)
-	fmt.Println(result)
+	fmt.Println("Positive sum :", postiveSum)
+	fmt.Println("Negative sum :", negativeSum)
+	fmt.Println("Hasilnya :", result)
+
+	fmt.Println("------------------")
+}
+
+func main() {
+	caseOne := []int{10, 120, 14, 50, 5}
+	caseTwo := []int{0, 2, 3, 4, 5}
+	MaxMin(caseOne)
+	MaxMin(caseTwo)
 }
